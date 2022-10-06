@@ -1,0 +1,193 @@
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    display: flex;
+}
+/* Ẩn các slider */
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 200px;
+    border-radius: 3px 0 0 3px;
+  }
+ /* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+/* định dạng các chấm chuyển đổi các slide */
+#dot-bar{
+    bottom: 10px;
+    width: 100%;
+    position: absolute;
+    padding: 0 40%;
+    display: flex;
+    align-items: center;
+}
+.dot {
+cursor:pointer;
+height: 15px;
+width: 15px;
+margin: 0 5px;
+background-color: #999999;
+border-radius: 10px;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+#swiper-bar div{
+    cursor: pointer;
+    height: 86.965px;
+    width: 200px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 13px;
+    padding: 30px;
+    transition: background-color 0.6s ease;
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,.15);
+}
+#swiper-bar div:hover, #dot:hover {
+    background-color: #eeeeee;
+}
+.dot.active{
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+}
+.swipe.active{
+    font-weight: 700;
+    border-right: 5px #e11b1e solid;
+    font-size: 15px;
+}
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 2s;
+animation-name: fade;
+animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+.row{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    border: 1px solid rgba(0,0,0,.15);
+}
+.product-contain-box, .title-box{
+    width: 100%;
+    display: flex;
+}
+.product-contain-box{
+    height: 360px;
+}
+.title-box{
+    justify-content: center;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    background-color: #e11b1e;
+    font-size: 25px; 
+}
+.title-box a h3{
+    color: #ffffff;
+}
+.product-box{
+    width: 240px;
+    height: 360px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+}
+.product-box:hover{
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,.15);
+    height: 400px;
+    z-index: 1;
+}
+.product-box:hover>.buy input{
+    display: block;
+}
+.product-box img{
+    width: 220px;
+    margin: 5px;
+}
+.product-box img:hover{
+    opacity: 1;
+}
+.product-box img:hover .prod-info{
+    display: block;
+    transition: 0.8s;
+}
+.prod-info{
+    width: 220px;
+    margin: 5px;
+    position: absolute;
+    display: none;
+}
+.product-box label{
+    font-weight: bolder;
+    color: #3e3d43;
+    margin: 10px 0;
+    height: 40px;
+}
+.price-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: baseline;
+    margin-bottom: 10px;
+}
+.old-price{
+    color: #3e3d43;
+}
+.special-price{
+    font-size: 15px;;
+    color: #e11b1e;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+.buy input{
+    position: relative;
+    border-radius: 5px;
+    box-shadow:  0 2px 3px 0 rgba(0,0,0,.15);
+    padding: 5px 60px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    color: white;
+    background-color: #e11b1e;border: 1px solid #e11b1e;
+    height: 40px;
+    display: none;;
+}
+.buy input:focus{
+    outline: none;
+    border: none;
+}

@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f8fd 
+}
+.header-container{
+    width: 100%;
+    height: 60px;
+    background-color: #eeeeee;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.header{
+    width: 1375px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+.left{
+    width: 395px;
+    height: 60px;
+    background-color: #ff000f;
+    line-height: 60px;
+    display: table-cell;
+    float: left;
+}
+.logo{
+    width: 75px;
+    height: 60px;
+    display: block;
+    float: left;
+}
+.logo a img{
+    width: 75px;
+    height: 60px;
+}
+.search-mini-form{
+    max-width: 3    20px;
+    height: 60px;
+    float: left;
+}
+.search{
+    width: 320px;
+    height: 60px;;
+    padding: 10px 15px;
+}
+.search input{
+    width: 260px;
+    padding: 5px 10px 5px 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.search button{
+    width: 30px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px; 
+    padding: 8.2px 8.35px;
+}
+.search input, button{
+    height: 38px;
+    float: left;
+    border: none;
+}
+.search button:hover{
+    cursor: pointer;
+}
+.search input:focus, button:focus{
+    outline: none;
+    border: none;
+}
+.right{
+    width: 980px;
+    height: 60px;
+    line-height:  50px;
+    display: inline-block;
+}
+.menu{
+    width: 640px;
+    height: auto; 
+    float: left;
+}
+.menu>ul{
+    list-style: none;
+    width: 640px;
+    height: 60px;
+}  
+.menu>ul>li{
+    display: inline-block;
+    width: auto;
+    height: 60px;
+    position: relative;
+}
+.menu>ul >li> a{
+    padding: 5px 10px;
+    width: 100px;
+    height: 60px;
+    color: #3c3d41;
+    text-align: center;
+    display: block;
+    font-weight: bolder;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    width: 160px;
+    background-color: #eeeeee;
+    color: #3c3d41;
+    z-index: 999;
+}
+.submenu>li{
+    width: 160px;
+    list-style: none;
+}
+.submenu> li >a{
+    width: 160px;
+    padding: 7px 14px;
+    height: 60px;
+    color: #3c3d41;
+    text-align: left;
+    display: block;
+}
+.menu ul li:hover .submenu{
+    display: block;
+}
+.menu ul li a:hover{
+    color: #ffffff;
+    background-color: #ff000f;
+    transition: 0.2s;
+}
+.info{
+    width: 340px;
+    height: 60px;
+    line-height: 60px;
+    float: right;
+}
+.cart, .signin, .signup{
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    float: right;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px 0;
+    margin: 0 5px;
+}
+.cart a, .signin a, .signup a{
+    border-radius: 15px;
+    border: 1px solid #3c3d41;
+    color: #3c3d41;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+}
+.cart a span, .signin a span, .signup a span{
+    font-size: 12px;
+}
+.cart a:hover, .signin a:hover, .signup a:hover{
+    background-color: #ff000f;
+    color: #ffffff;
+    border: 1px solid #ff000f;
+    transition: 0.2s;
+}
+.content{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 0;
+}
+.finfo{
+    width: 100%;
+    height: 220px;
+    background-color: #eeeeee;
+    margin: 0 auto;
+}
+.contact{
+    padding-top: 20px;
+    display: flex;
+    text-align: left ;
+    width: 1200px;
+    height: 220px;
+    margin: 0 auto;
+    list-style: none;
+}
+.contact li{
+    width: 400px;
+    height: 100%;
+}
+.contact li div img{
+    width: 62.5px;
+    height: 50px;
+}
+.contact li>img{
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0 5px;
+    border: 1px solid #eeeeee;
+}
+.copyright{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    color: #999999;
+    line-height: 30px;
+    background-color: #dddddd;
+}
+.copyright p{
+    margin: 0;
+    padding: 0;
+}
+.clear{
+    clear: both;
+}

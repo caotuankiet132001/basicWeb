@@ -1,0 +1,80 @@
+.contentregister{
+    margin: auto;
+    padding: 0;
+    width: 60%;
+    background-color: #eeeeee;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    margin-bottom: 100px;
+
+}
+h1{
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    height: 60px;
+    border-radius: 15px;
+    padding-top: 12px;
+
+    margin-top: 100px;
+}
+.formregister{
+    /* background-color: #f5f8fd; */
+    padding-left: 260px;
+    background-color: #eeeeee;
+}
+#taikhoan{
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+
+    padding-left: 30px;
+    
+}
+#matkhau{
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+
+    padding-left: 30px;
+}
+#dangky{
+    width: 60%;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    
+}
+.contentregister p{
+    margin-left: 75px;
+    margin-top: 10px;
+}
+.contentregister a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+#email{
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+
+    padding-left: 30px;
+    margin-top: 30px;
+}
+#cfmatkhau{
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+
+    padding-left: 30px;
+    
+}
